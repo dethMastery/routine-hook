@@ -1,0 +1,11 @@
+{
+  "name": "routine-hook",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/dethMastery/routine-hook.git",
+  "author": "Suphakit P. <me@suphakit.net>",
+  "license": "MIT",
+  "dependencies": {
+    "@capacitor/android": "^5.3.0"
+  }
+}
