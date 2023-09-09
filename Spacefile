@@ -9,6 +9,7 @@ micros:
     primary: true
     public_routes:
       - '/'
+      - '/css'
     presets:
       env:
         - name: HOOK_URL
