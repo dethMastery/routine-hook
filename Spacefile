@@ -14,3 +14,9 @@ micros:
       env:
         - name: HOOK_URL
           description: your discord hook :)
+    actions:
+      - id: 'kol'
+        name: 'Keep online'
+        description: 'keep server online'
+        trigger: 'schedule'
+        default_interval: '0 */1 * * *'
