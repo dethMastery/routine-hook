@@ -43,6 +43,18 @@ cron.schedule('0 19 * * *', () => {
     .catch((err) => {
       console.log(`[${color.red(date)}] : ${err}`)
     })
+
+  Hook.setPayload({
+    content: '@pompommuu_',
+  })
+
+  Hook.fire()
+    .then(() => {
+      console.log(`[${color.blue(date)}] : Tag Send! :)`)
+    })
+    .catch((err) => {
+      console.log(`[${color.red(date)}] : ${err}`)
+    })
 })
 
 cron.schedule('0 */1 * * *', () => {
@@ -68,6 +80,18 @@ cron.schedule('0 */1 * * *', () => {
     .catch((err) => {
       console.log(`[${color.red(date)}] : ${err}`)
     })
+
+  Hook.setPayload({
+    content: '@pompommuu_',
+  })
+
+  Hook.fire()
+    .then(() => {
+      console.log(`[${color.blue(date)}] : Tag Send! :)`)
+    })
+    .catch((err) => {
+      console.log(`[${color.red(date)}] : ${err}`)
+    })
 })
 
 cron.schedule('30 23 * * *', () => {
@@ -89,6 +113,18 @@ cron.schedule('30 23 * * *', () => {
   Hook.fire()
     .then(() => {
       console.log(`[${color.blue(date)}] : Cron Send! :)`)
+    })
+    .catch((err) => {
+      console.log(`[${color.red(date)}] : ${err}`)
+    })
+
+  Hook.setPayload({
+    content: '@_dethz',
+  })
+
+  Hook.fire()
+    .then(() => {
+      console.log(`[${color.blue(date)}] : Tag Send! :)`)
     })
     .catch((err) => {
       console.log(`[${color.red(date)}] : ${err}`)
