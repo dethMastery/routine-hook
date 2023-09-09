@@ -16,6 +16,29 @@ const secret = url[1]
 
 const Hook = new hookcord.Hook().login(id, secret)
 
+Hook.setPayload({
+  embeds: [
+    {
+      title: 'Cron service started :D',
+      color: 15257231,
+      fields: [
+        {
+          name: 'Cron service',
+          value: 'now cron is running :)',
+        },
+      ],
+    },
+  ],
+})
+
+Hook.fire()
+  .then(() => {
+    console.log(`[${color.blue(date)}] : State Send! :)`)
+  })
+  .catch((err) => {
+    console.log(`[${color.red(date)}] : ${err}`)
+  })
+
 cron.schedule('* * * * *', () => {
   console.log(`[${color.cyan(date)}] : keep online :)`)
 })
