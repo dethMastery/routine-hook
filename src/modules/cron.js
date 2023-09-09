@@ -29,7 +29,7 @@ cron.schedule('0 19 * * *', () => {
         fields: [
           {
             name: 'อย่าลืมกินยานะคะ ไอตะเร้กของเค้า',
-            value: 'Tag เรียก @pompommuu_',
+            value: 'Tag เรียก <@253540096853278720>',
           },
         ],
       },
@@ -39,18 +39,6 @@ cron.schedule('0 19 * * *', () => {
   Hook.fire()
     .then(() => {
       console.log(`[${color.blue(date)}] : Cron Send! :)`)
-    })
-    .catch((err) => {
-      console.log(`[${color.red(date)}] : ${err}`)
-    })
-
-  Hook.setPayload({
-    content: '@pompommuu_',
-  })
-
-  Hook.fire()
-    .then(() => {
-      console.log(`[${color.blue(date)}] : Tag Send! :)`)
     })
     .catch((err) => {
       console.log(`[${color.red(date)}] : ${err}`)
@@ -66,7 +54,7 @@ cron.schedule('0 */1 * * *', () => {
         fields: [
           {
             name: 'อย่าลืมพ่นยาด้วยนะคะ ไอตะเร้กของเค้า',
-            value: 'Tag เรียก @pompommuu_',
+            value: 'Tag เรียก <@253540096853278720>',
           },
         ],
       },
@@ -80,21 +68,9 @@ cron.schedule('0 */1 * * *', () => {
     .catch((err) => {
       console.log(`[${color.red(date)}] : ${err}`)
     })
-
-  Hook.setPayload({
-    content: '@pompommuu_',
-  })
-
-  Hook.fire()
-    .then(() => {
-      console.log(`[${color.blue(date)}] : Tag Send! :)`)
-    })
-    .catch((err) => {
-      console.log(`[${color.red(date)}] : ${err}`)
-    })
 })
 
-cron.schedule('30 23 * * *', () => {
+cron.schedule('0 23 * * *', () => {
   Hook.setPayload({
     embeds: [
       {
@@ -103,7 +79,7 @@ cron.schedule('30 23 * * *', () => {
         fields: [
           {
             name: 'กินแก้แพ้ด้วยเดี๋ยวตาย',
-            value: 'Tag เรียก @_dethz @dethz._',
+            value: 'Tag เรียก <@387465159322632202> <@298415109359796234>',
           },
         ],
       },
@@ -117,14 +93,27 @@ cron.schedule('30 23 * * *', () => {
     .catch((err) => {
       console.log(`[${color.red(date)}] : ${err}`)
     })
+})
 
+cron.schedule('0 0 * * *', () => {
   Hook.setPayload({
-    content: '@_dethz',
+    embeds: [
+      {
+        title: "Don't forget your daily commit",
+        color: 15257231,
+        fields: [
+          {
+            name: 'your daily commit is waiting for you',
+            value: 'Tag เรียก <@387465159322632202> <@298415109359796234>',
+          },
+        ],
+      },
+    ],
   })
 
   Hook.fire()
     .then(() => {
-      console.log(`[${color.blue(date)}] : Tag Send! :)`)
+      console.log(`[${color.blue(date)}] : Cron Send! :)`)
     })
     .catch((err) => {
       console.log(`[${color.red(date)}] : ${err}`)
