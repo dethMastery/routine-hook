@@ -296,6 +296,13 @@ has@^1.0.3:
   dependencies:
     function-bind "^1.1.1"
 
+hookcord@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/hookcord/-/hookcord-2.0.2.tgz#4a3a2aa8e8bafa923971111c60886e80d894ee85"
+  integrity sha512-MumHP4G5JdyMAwO8dv4JlpUJtnUl6ff0juZtb2h0CkFU/NYrrjxjj35bYoYOQwqMerBRuK4PmNGEq4hOrQ/0fw==
+  dependencies:
+    snekfetch "^4.0.2"
+
 http-errors@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/http-errors/-/http-errors-2.0.0.tgz#b7774a1486ef73cf7667ac9ae0858c012c57b9d3"
@@ -584,6 +591,11 @@ simple-update-notifier@^2.0.0:
   integrity sha512-a2B9Y0KlNXl9u/vsW6sTIu9vGEpfKu2wRV6l1H3XEas/0gUIzGzBoP/IouTcUQbm9JWZLH3COxyn03TYlFax6w==
   dependencies:
     semver "^7.5.3"
+
+snekfetch@^4.0.2:
+  version "4.0.4"
+  resolved "https://registry.yarnpkg.com/snekfetch/-/snekfetch-4.0.4.tgz#e76a03b8476699a1f0c036d6567e386ce5fbde8e"
+  integrity sha512-dyycG9fvwtSJqKPfMVOpXt+60qvMGe7vWLwOJDiSJaiAx+hs2EnFChG2bXCWn7ulz+zGzrHdN9/yeEb0YqEPww==
 
 statuses@2.0.1:
   version "2.0.1"
