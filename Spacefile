@@ -19,4 +19,4 @@ micros:
         name: 'Keep online'
         description: 'keep server online'
         trigger: 'schedule'
-        default_interval: '0 */1 * * *'
+        default_interval: '*/30 * * * *'
